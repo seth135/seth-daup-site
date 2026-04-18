@@ -383,20 +383,11 @@ export default function SethDaupLLCWebsite() {
         <section id="about" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800 p-8">
-              <div className="flex h-full min-h-[320px] flex-col justify-between rounded-[1.5rem] border border-dashed border-white/10 bg-white/[0.03] p-8">
-                <div>
-                  <div className="text-sm uppercase tracking-[0.25em] text-slate-400">
-                    Professional photo
-                  </div>
-                  <div className="mt-4 text-2xl font-medium text-white">
-                    Headshot Placeholder
-                  </div>
-                </div>
-                <p className="max-w-sm text-sm leading-7 text-slate-400">
-                  Replace this block with a professional but approachable photo.
-                  Outdoors, downtown, or in a workspace could all fit the brand.
-                </p>
-              </div>
+              <img
+                src="/chatGPT_headshot.png"
+                alt="Seth Daup"
+                className="h-full w-full rounded-[1.5rem] object-cover"
+              />
             </div>
             <div>
               <p className="text-sm font-medium uppercase tracking-[0.25em] text-emerald-300">
