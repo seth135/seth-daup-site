@@ -548,39 +548,62 @@ export default function SethDaupLLCWebsite() {
               </div>
 
               <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/60 p-6 backdrop-blur">
-                <div className="grid gap-4">
+                <form
+                  action="https://formspree.io/f/maqaogvy"
+                  method="POST"
+                  className="grid gap-4"
+                >
                   <div>
-                    <label className="mb-2 block text-sm text-slate-300">
-                      Name
-                    </label>
-                    <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-500">
-                      Your name
-                    </div>
+                    <label className="mb-2 block text-sm text-slate-300">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Your name"
+                      className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
+                    />
                   </div>
+                
                   <div>
-                    <label className="mb-2 block text-sm text-slate-300">
-                      Business or Organization
-                    </label>
-                    <div className="rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-500">
-                      Who you work with
-                    </div>
+                    <label className="mb-2 block text-sm text-slate-300">Business or Organization</label>
+                    <input
+                      type="text"
+                      name="business"
+                      placeholder="Business name"
+                      className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
+                    />
                   </div>
+                
                   <div>
-                    <label className="mb-2 block text-sm text-slate-300">
-                      What do you need help with?
-                    </label>
-                    <div className="min-h-[120px] rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-500">
-                      Tell me about your website, process, reporting, marketing,
-                      or operational challenge.
-                    </div>
+                    <label className="mb-2 block text-sm text-slate-300">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="you@example.com"
+                      className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
+                    />
                   </div>
-                  <a
-                    href="mailto:seth@sethdaup.com?subject=Consultation%20Request"
+                
+                  <div>
+                    <label className="mb-2 block text-sm text-slate-300">What do you need help with?</label>
+                    <textarea
+                      name="message"
+                      required
+                      placeholder="Tell me about your business, website, process, or project."
+                      className="min-h-[140px] w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
+                    />
+                  </div>
+                
+                  <input type="hidden" name="_subject" value="New website inquiry from SethDaup.com" />
+                
+                  <button
+                    type="submit"
                     className="mt-2 rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:scale-[1.01]"
                   >
-                    Schedule a Free Consultation
-                  </a>
-                </div>
+                    Send Message
+                  </button>
+                </form>
               </div>
             </div>
           </div>
