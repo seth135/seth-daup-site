@@ -17,6 +17,7 @@ export const metadata = {
   description: "Helping Central Nebraska businesses grow with practical support and useful tools.",
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
