@@ -366,7 +366,7 @@ export default function SethDaupLLCWebsite() {
 
 
 
-                <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/60 p-6 backdrop-blur">
+                              <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/60 p-6 backdrop-blur">
                 <form
                   action="https://formspree.io/f/maqaogvy"
                   method="POST"
@@ -409,7 +409,7 @@ export default function SethDaupLLCWebsite() {
                     <textarea
                       name="message"
                       required
-                      placeholder="Tell me about your website, process, reporting, marketing, or operational challenge."
+                      placeholder="Tell me about your business, website, process, or project."
                       className="min-h-[140px] w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
                     />
                   </div>
@@ -420,7 +420,7 @@ export default function SethDaupLLCWebsite() {
                     type="submit"
                     className="mt-2 rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:scale-[1.01]"
                   >
-                    Schedule a Free Consultation
+                    Send Message
                   </button>
                 </form>
               </div>
