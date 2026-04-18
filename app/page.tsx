@@ -366,13 +366,24 @@ export default function SethDaupLLCWebsite() {
 
 
 
-                              <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/60 p-6 backdrop-blur">
-                <form
+                
+                <div className="mt-8 space-y-3 text-slate-300">
+                  <div><span className="font-medium text-white">Business:</span> Seth Daup, LLC</div>
+                  <div><span className="font-medium text-white">Location:</span> Gothenburg, Nebraska</div>
+                  <div><span className="font-medium text-white">Email:</span> seth@sethdaup.com</div>
+                  <div><span className="font-medium text-white">Availability:</span> Serving businesses and organizations across Central Nebraska</div>
+                </div>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-white/10 bg-slate-950/60 p-6 backdrop-blur">
+                
+              <form
                   action="https://formspree.io/f/maqaogvy"
                   method="POST"
                   className="grid gap-4"
-                >
-                  <div>
+              >
+
+                <div>
                     <label className="mb-2 block text-sm text-slate-300">Name</label>
                     <input
                       type="text"
@@ -384,7 +395,8 @@ export default function SethDaupLLCWebsite() {
                   </div>
                 
                   <div>
-                    <label className="mb-2 block text-sm text-slate-300">Business or Organization</label>
+
+                  <label className="mb-2 block text-sm text-slate-300">Business or Organization</label>
                     <input
                       type="text"
                       name="business"
@@ -394,7 +406,8 @@ export default function SethDaupLLCWebsite() {
                   </div>
                 
                   <div>
-                    <label className="mb-2 block text-sm text-slate-300">Email</label>
+
+                  <label className="mb-2 block text-sm text-slate-300">Email</label>
                     <input
                       type="email"
                       name="email"
@@ -403,6 +416,7 @@ export default function SethDaupLLCWebsite() {
                       className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-slate-500 outline-none"
                     />
                   </div>
+
                 
                   <div>
                     <label className="mb-2 block text-sm text-slate-300">What do you need help with?</label>
@@ -420,7 +434,8 @@ export default function SethDaupLLCWebsite() {
                     type="submit"
                     className="mt-2 rounded-full bg-white px-6 py-3 text-center text-sm font-semibold text-slate-950 transition hover:scale-[1.01]"
                   >
-                    Send Message
+
+                    Schedule a Free Consultation    
                   </button>
                 </form>
               </div>
