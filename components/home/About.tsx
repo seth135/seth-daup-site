@@ -43,11 +43,11 @@ export function About() {
             I co-founded Cattle Kettle, an AgTech IoT startup for ranch water
             monitoring, worked as a software engineer at NCR Corporation, built
             an AI tool for Mutual of Omaha, invested in startups through Huskers
-            Venture Fund, and consulting with growing businesses along the way.
+            Venture Fund, and consulted with growing businesses along the way.
           </p>
           <p>
             After graduating, I traveled through Australia, Indonesia, and New
-            Zealand. I believe in what small towns can be, and I want to put
+            Zealand. I believe in our Nebraskan communities, and I want to put
             what I&apos;ve learned to work here.
           </p>
         </div>
