@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #f7f3ec;
+  --cream-mid: #ede8de;
+  --navy: #1c2b3a;
+  --amber: #c8742a;
+  --amber-warm: #e8924a;
+  --sand: #b5a898;
+  --white: #fdfcfa;
+  --ink-muted: #68717a;
+  --line: rgba(28, 43, 58, 0.12);
+  --shadow-soft: 0 20px 55px rgba(28, 43, 58, 0.09);
+  --shadow-lift: 0 28px 75px rgba(28, 43, 58, 0.14);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--cream);
+  --color-cream-mid: var(--cream-mid);
+  --color-navy: var(--navy);
+  --color-amber: var(--amber);
+  --color-amber-warm: var(--amber-warm);
+  --color-sand: var(--sand);
+  --color-paper: var(--white);
+  --font-display: var(--font-instrument-serif);
+  --font-body: var(--font-dm-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+::selection {
+  background: rgba(200, 116, 42, 0.22);
+}
+
+.noise-overlay {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  opacity: 0.025;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.hatched {
+  background-image:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04) 25%, transparent 25%),
+    linear-gradient(135deg, transparent 75%, rgba(255, 255, 255, 0.04) 75%);
+  background-position:
+    0 0,
+    12px 12px;
+  background-size: 24px 24px;
+}
+
+.geo-pattern {
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(253, 252, 250, 0.28) 0 1px, transparent 1px),
+    linear-gradient(135deg, rgba(253, 252, 250, 0.18) 0 1px, transparent 1px);
+  background-size:
+    28px 28px,
+    22px 22px;
+}
+
+.privacy-copy p + p,
+.privacy-copy ul + p {
+  margin-top: 1rem;
+}
+
+.privacy-copy ul {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.privacy-copy li + li {
+  margin-top: 0.4rem;
 }
