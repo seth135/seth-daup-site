@@ -7,7 +7,7 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 export function ContactCTA() {
   const [status, setStatus] = useState("");
 
-  async function handleSubmit(event) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const form = event.currentTarget;
