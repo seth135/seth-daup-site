@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+// import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
@@ -54,12 +54,12 @@ export function SelectedWork() {
             Problems involving technology, operations, and business growth.
           </p>
         </div>
-        <Link
+        {/* <Link
           href="/portfolio"
           className="w-fit rounded-lg border border-navy/[0.18] bg-paper px-5 py-3 text-sm font-bold text-navy shadow-[0_14px_36px_rgba(28,43,58,0.07)] transition hover:-translate-y-0.5 hover:border-amber/[0.35]"
         >
           View full portfolio
-        </Link>
+        </Link> */}
       </div>
 
       <div className="mt-14 grid gap-5 lg:grid-cols-3">
