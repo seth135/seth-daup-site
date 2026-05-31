@@ -1,7 +1,34 @@
+"use client";
+
+import { useState } from "react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export function ContactCTA() {
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const data = new FormData(form);
+
+    const response = await fetch("https://formspree.io/f/maqaogvy", {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      form.reset();
+      setStatus("Thanks — your message was sent.");
+    } else {
+      setStatus("Something went wrong. Please try again.");
+    }
+  }
+
   return (
     <div id="contact" className="overflow-hidden bg-navy">
       <AnimatedSection
@@ -39,11 +66,7 @@ export function ContactCTA() {
         </div>
 
         <div className="rounded-[10px] border border-white/10 bg-white/[0.06] p-6 shadow-[0_34px_90px_rgba(0,0,0,0.18)] sm:p-8">
-          <form
-            action="https://formspree.io/f/maqaogvy"
-            method="POST"
-            className="space-y-5"
-          >
+          <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="mb-2 block text-[0.72rem] font-bold uppercase tracking-[0.18em] text-white/[0.46]">
                 Name
@@ -106,6 +129,10 @@ export function ContactCTA() {
             >
               Send a Message
             </button>
+
+            {status && (
+              <p className="text-sm font-semibold text-white/80">{status}</p>
+            )}
           </form>
         </div>
       </AnimatedSection>
