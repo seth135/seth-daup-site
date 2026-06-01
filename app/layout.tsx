@@ -18,7 +18,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Seth Daup, LLC | Practical Tech Help in Central Nebraska",
   description:
-    "Warm, practical technology and business consulting for small businesses, ranches, schools, and nonprofits across Central Nebraska.",
+    "Practical technology and business consulting for small businesses, ag operations, schools, and nonprofits across Nebraska.",
 };
 
 export default function RootLayout({
